@@ -183,6 +183,7 @@ footer {
     display: none;
 }
 
+
 @media screen and (max-width: 650px){
 
     .responsive-row {
@@ -197,7 +198,7 @@ footer {
         background-color: white;        
     }
    
-    .main {
+    .main, .main-success {
         display: flex;
         width: 100%;
         flex-direction: column;
