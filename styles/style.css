@@ -233,7 +233,7 @@ footer {
         visibility: hidden;
     }
 
-    #label-birthday:after {
+    #labelBirthday:after {
         visibility: visible;
         content: 'Day';       
     }
