@@ -132,6 +132,34 @@ footer {
     filter: drop-shadow(2px 2px 2px #767676);
 }
 
+
+.footer-group1 input {
+    display: none;
+}
+
+.footer-group1 input + label:before {
+    display: inline-flex;
+    content:'';
+    width: 16px;
+    height: 16px;
+    background-color: #FFFFFF;;
+    border: 1px solid #0DBDBD;
+    filter: drop-shadow(2px 2px 2px #767676);
+    border-radius: 3px;
+    margin-right: 5px;
+    vertical-align: middle;
+    filter: drop-shadow(2px 2px 2px #767676);
+}
+
+.footer-group1 input:checked + label:before {
+    background-color: #0DBDBD;
+    content: "\2713";
+    color:#FFFFFF;
+    align-items: center;
+    justify-content: center;
+}
+
+
 .button {
     width: 81px;
     height: 40px;
