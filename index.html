@@ -22,21 +22,31 @@
             <div class="form-control">
                 <label id="labelName" for="name">Full Name *</label>
                 <input type="text" name="name" id="name" placeholder="Name" required>
+                <label class="error name-error"> Fullname Invalid</label>
             </div>
             <div class="form-group" id="form-group-responsive">
                 <div>
                     <label id="labelEmail" for="email">Email *</label>
-                    <input type="email" name="email" id="email" placeholder="foo@bar.com" required>
+                    <input 
+                        type="email" 
+                        name="email" 
+                        id="email" 
+                        placeholder="foo@bar.com" 
+                        required
+                    >
+                    <label class="error mail-error">Email Invalid</label>
                 </div>
                 <div class="phone-row">
                     <label id="labelPhone" for="phone">Phone</label>
                     <input type="number" name="phone" id="phone" onfocus="(this.type='tel')" placeholder="(83) 00000-0000" required>
+                    <label class="error phone-error">Phone Invalid</label>
                 </div>
             </div>
             <div class="form-group" id="form-group-responsive2">
                 <div>
                     <label id="labelPassword" for="password">Password *</label>
                     <input type="password" name="password" id="password" placeholder="password" required>
+                    <label class="error password-error">Password Invalid</label>                    
                 </div>
                 <div class="birthday-row">
                     <label id="labelBirthday" for="birthday">Birthday *</label>
@@ -48,14 +58,15 @@
                         onblur="(this.type='text')"
                         placeholder="yyyy-mm-dd"
                         required
-                    />
+                    />                   
                 </div>
             </div>
         </form>
         <footer>
             <div class="footer-group1">
-                <input class="check" type="checkbox" name="accept" id="accept" required>
+                <input class="check" type="checkbox" name="accept" id="accept">
                 <label id="accept-label" for="accept">I accept the terms and privacy</label>
+                <label class="error accept-error">You must accept the terms</label> 
             </div>
             <div class="footer-group2">
                 <button type="submit" id="successButton" class="button" onclick="success()">Register</button>
